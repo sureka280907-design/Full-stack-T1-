@@ -235,4 +235,6 @@ var{name,mobile,dept,email,isActive} = {
     isActive:true
 }
 console.log(name,mobile,dept,email,isActive)
+
+
     
