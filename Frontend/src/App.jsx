@@ -5,19 +5,21 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Home from './pages/Home'
 import Service from './pages/Service'
+import { Routes,Route } from 'react-router-dom'
+import Effects from './components/Effects'
 const App = () => {
   return (
-    //Fragment Tag
     <>
     <Navbar/>
-    <h1>Hello World</h1>
-    <h1>Hello World</h1>
-    <Parent/>
-    <About/>
-    <Home/>
-    <Contact/>
-    <Service/>
-    <Counter/>
+    <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/about' element={<About/>}/>
+      <Route path='/contact' element={<Contact/>}/>
+      <Route path='/service' element={<Service/>}/>
+      <Route path='/parent' element={<Parent/>}/>
+      <Route path='/useState' element={<Counter/>}/>
+      <Route path='/useEffect' element={<Effects/>}/>
+       </Routes>
     </>
   )
 }

@@ -9,7 +9,7 @@ const Counter = () => {
     }
     const handleReset = ()=>{ setCount(0);
     }
-    }
+    
   return (
     <div>
         <h1>{count}</h1>
@@ -19,5 +19,5 @@ const Counter = () => {
     </div>
   )
 
-
+}
 export default Counter
